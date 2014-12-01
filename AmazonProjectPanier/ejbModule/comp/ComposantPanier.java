@@ -15,7 +15,7 @@ public class ComposantPanier implements ComposantPanierRemote
 	EntityManager em;
 
 	@Override
-	public void ajouterProduit() 
+	public void ajouterProduit()
 	{
 		System.err.println("TEST Ajout Produit !");	
 		

@@ -40,7 +40,8 @@ public class LoginServlet extends HttpServlet
 		String login = request.getParameter("login");
 		String password = request.getParameter("password");
 		
-		if(!login.isEmpty() && !password.isEmpty()){
+		if(!login.isEmpty() && !password.isEmpty())
+		{
 			
 			Utilisateur currentUser = new Utilisateur();
 			currentUser.setLogin(login);
@@ -51,7 +52,8 @@ public class LoginServlet extends HttpServlet
 			request.getSession().setAttribute("utilisateur", currentUser);
 			request.getRequestDispatcher("content.jsp").forward(request, reponse);
 		}
-		else {
+		else 
+		{
 			
 			reponse.sendRedirect("index.jsp");
 		}

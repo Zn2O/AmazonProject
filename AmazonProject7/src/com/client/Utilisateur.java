@@ -7,29 +7,35 @@
  */
 package com.client;
 
-public class Utilisateur{
+public class Utilisateur
+{
 	
 	private String login;
 	private String password;
 	
-	public Utilisateur(){
+	public Utilisateur()
+	{
 		this.login = "toto";
 		this.password = "toto";
 	}
 
-	public String getLogin() {
+	public String getLogin()
+	{
 		return login;
 	}
 
-	public void setLogin(String login) {
+	public void setLogin(String login) 
+	{
 		this.login = login;
 	}
 
-	public String getPassword() {
+	public String getPassword() 
+	{
 		return password;
 	}
 
-	public void setPassword(String password) {
+	public void setPassword(String password)
+	{
 		this.password = password;
 	}
 	
