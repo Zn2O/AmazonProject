@@ -9,7 +9,8 @@ public class Produit
 	@javax.persistence.Id @GeneratedValue
 	private int id;
 	private String nom;
-	private int prix;
+	private double prix;
+	private int quantite;
 	
 	
 	public int getId() 
@@ -28,13 +29,20 @@ public class Produit
 	{
 		this.nom = nom;
 	}
-	public int getPrix() 
-	{
+	public double getPrix() {
 		return prix;
 	}
-	public void setPrix(int prix)
+	public void setPrix(double prix) 
 	{
 		this.prix = prix;
 	}
+	public int getQuantite() {
+		return quantite;
+	}
+	public void setQuantite(int quantite)
+	{
+		this.quantite = quantite;
+	}
+
 
 }
